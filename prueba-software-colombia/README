@@ -1,0 +1,36 @@
+SERVICIOS:
+
+1.LISTAR TODAS LAS PELICULAS: GET http://localhost:8080 
+
+2.AGREGAR UNA NUEVA PELICULA: 
+POST http://localhost:8080/save/78 HTTP/1.1
+content-type: application/json
+
+{
+    "film": "Fight Club",
+    "genre": "Drama",
+    "studio": "20th Century Fox",
+    "score": "88",
+    "year": "1999"
+}
+
+3.LISTAR DE MANERA DESCENDENTE: GET http://localhost:8080/list/des
+
+4.LISTAR DE MANERA DESCENDENTE: GET http://localhost:8080/list/asc
+
+5.BUSCAR PELICULA MEDIANTE SU ID: GET http://localhost:8080/movie/1 
+
+6.ACTUALIZAR PELICULA MEDIANTE SU ID: 
+POST http://localhost:8080/update/78 HTTP/1.1
+content-type: application/json
+
+{
+    "id": "21",
+    "film": "Fight Club ACTUALIZADA",
+    "genre": "Drama",
+    "studio": "20th Century Fox",
+    "score": "88",
+    "year": "1999"
+}
+
+7.ELIMINAR PELICULA MEDIANTE SU ID: GET http://localhost:8080/delete/77
