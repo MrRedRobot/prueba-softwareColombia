@@ -16,7 +16,7 @@ content-type: application/json
 
 3.LISTAR DE MANERA DESCENDENTE: GET http://localhost:8080/list/des
 
-4.LISTAR DE MANERA DESCENDENTE: GET http://localhost:8080/list/asc
+4.LISTAR DE MANERA ASCENDENTE: GET http://localhost:8080/list/asc
 
 5.BUSCAR PELICULA MEDIANTE SU ID: GET http://localhost:8080/movie/1 
 
