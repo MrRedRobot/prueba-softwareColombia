@@ -1,0 +1,42 @@
+GET http://localhost:8080 HTTP/1.1
+content-type: application/json
+
+###
+POST http://localhost:8080/save/78 HTTP/1.1
+content-type: application/json
+
+{
+    "film": "Fight Club",
+    "genre": "Drama",
+    "studio": "20th Century Fox",
+    "score": "88",
+    "year": "1999"
+}
+
+### 
+GET http://localhost:8080/list/des HTTP/1.1
+content-type: application/json
+
+###
+POST http://localhost:8080/update/78 HTTP/1.1
+content-type: application/json
+
+{
+    "id": "21",
+    "film": "Fight Club ACTUALIZADA",
+    "genre": "Drama",
+    "studio": "20th Century Fox",
+    "score": "88",
+    "year": "1999"
+}
+
+####
+
+
+GET http://localhost:8080/movie/1 HTTP/1.1
+content-type: application/json
+
+###
+GET http://localhost:8080/delete/77 HTTP/1.1
+content-type: application/json
+
